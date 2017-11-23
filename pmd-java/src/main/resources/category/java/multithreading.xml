@@ -360,4 +360,38 @@ one is chosen.  The thread chosen is arbitrary; thus its usually safer to call n
         </example>
     </rule>
 
+    <rule name="ImplementRunnableInsteadOfExtendThread"
+          language="java"
+          since="3.0"
+          message="Runnable should be implemented instead of extending Thread"
+          class="net.sourceforge.pmd.lang.java.rule.multithreading.ImplementRunnableInsteadOfExtendThreadRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_multithreading.html#implementrunnableinsteadofextendthread">
+        <description>
+            Runnable should be implemented instead of extending Thread
+        </description>
+        <priority>3</priority>
+
+        <example>
+            <![CDATA[
+// Correct example
+import java.lang.Runnable;
+
+public class Foo implements Runnable {
+    @Override
+    public void run() {
+    }
+}
+
+// Wrong example
+import java.lang.Thread
+
+public class Foo extends Thread {
+    @Override
+    public void run() {
+    }
+}
+]]>
+        </example>
+    </rule>
+
 </ruleset>

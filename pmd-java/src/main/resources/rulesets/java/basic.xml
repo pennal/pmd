@@ -26,6 +26,7 @@ The Basic ruleset contains a collection of good practices which should be follow
     <rule ref="category/java/multithreading.xml/AvoidThreadGroup" deprecated="true" />
     <rule ref="category/java/multithreading.xml/DontCallThreadRun" deprecated="true" />
     <rule ref="category/java/multithreading.xml/DoubleCheckedLocking" deprecated="true" />
+    <rule ref="category/java/multithreading.xml/ImplementRunnableInsteadOfExtendThread" deprecated="true" />
 
     <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP" deprecated="true" />
     <rule ref="category/java/bestpractices.xml/CheckResultSet" deprecated="true" />

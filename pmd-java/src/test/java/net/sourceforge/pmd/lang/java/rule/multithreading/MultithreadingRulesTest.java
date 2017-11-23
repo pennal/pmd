@@ -25,6 +25,7 @@ public class MultithreadingRulesTest extends SimpleAggregatorTst {
         addRule(RULESET, "UnsynchronizedStaticDateFormatter");
         addRule(RULESET, "UseConcurrentHashMap");
         addRule(RULESET, "UseNotifyAllInsteadOfNotify");
+        addRule(RULESET, "ImplementRunnableInsteadOfExtendThread");
     }
 
     // Used by DontCallThreadRun test cases
