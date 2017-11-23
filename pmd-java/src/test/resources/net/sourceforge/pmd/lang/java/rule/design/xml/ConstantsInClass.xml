@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data
+    xmlns="http://pmd.sourceforge.net/rule-tests"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests http://pmd.sourceforge.net/rule-tests_1_0_0.xsd">
+
+    <test-code>
+        <description><![CDATA[
+TEST1
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class Foo {
+    public static final String BAR = "bar";
+    public static final String BAZ = "baz";
+
+    private Foo() {}
+}
+     ]]></code>
+    </test-code>
+    <test-code>
+        <description><![CDATA[
+TEST2
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class Foo {
+    public static final String BAR = "bar";
+    public static final String BAZ = "baz";
+
+    public Foo() {}
+}
+     ]]></code>
+    </test-code>
+    <test-code>
+        <description><![CDATA[
+TEST3
+     ]]></description>
+        <expected-problems>1</expected-problems>
+        <code><![CDATA[
+public class Foo {
+    public static final String BAR = "bar";
+    public static final String BAZ = "baz";
+}
+     ]]></code>
+    </test-code>
+    <test-code>
+        <description><![CDATA[
+TEST4
+     ]]></description>
+        <expected-problems>0</expected-problems>
+        <code><![CDATA[
+public class Foo {
+    public void bar() {}
+}
+     ]]></code>
+    </test-code>
+</test-data>

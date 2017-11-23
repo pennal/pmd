@@ -25,6 +25,7 @@ are suggested.
     <rule ref="category/java/design.xml/SingularField" deprecated="true" />
     <rule ref="category/java/design.xml/SwitchDensity" deprecated="true" />
     <rule ref="category/java/design.xml/UseUtilityClass" deprecated="true" />
+    <rule ref="category/java/design.xml/ConstantsInClass" deprecated="true" />
 
     <rule ref="category/java/errorprone.xml/AssignmentToNonFinalStatic" deprecated="true" />
     <rule ref="category/java/errorprone.xml/AvoidInstanceofChecksInCatchClause" deprecated="true" />

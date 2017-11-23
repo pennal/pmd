@@ -1602,4 +1602,36 @@ public class MaybeAUtility {
         </example>
     </rule>
 
+    <rule name="ConstantsInClass"
+          language="java"
+          since="3.0"
+          message="Constant-only classes should not be instantiable"
+          class="net.sourceforge.pmd.lang.java.rule.design.ConstantsInClassRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_java_design.html#constantsinclass">
+        <description>
+            Constant-only classes should not be instantiable
+        </description>
+        <priority>3</priority>
+
+        <example>
+            <![CDATA[
+// Correct example
+public class Foo {
+    public static final String BAR = "bar";
+    public static final String BAZ = "baz";
+
+    private Foo() {}
+}
+
+// Wrong example
+public class Foo {
+    public static final String BAR = "bar";
+    public static final String BAZ = "baz";
+
+    public Foo() {}
+}
+]]>
+        </example>
+    </rule>
+
 </ruleset>

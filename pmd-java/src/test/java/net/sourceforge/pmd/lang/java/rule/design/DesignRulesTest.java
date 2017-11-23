@@ -68,6 +68,7 @@ public class DesignRulesTest extends SimpleAggregatorTst {
         addRule(RULESET, "UselessOverridingMethod");
         addRule(RULESET, "UseObjectForClearerAPI");
         addRule(RULESET, "UseUtilityClass");
+        addRule(RULESET, "ConstantsInClass");
 
         // addRule(RULESET, "PositionalIteratorRule"); This rule does not yet
         // exist
